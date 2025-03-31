@@ -35,7 +35,7 @@ import AdminDMain from "../dashboard/admin/dashboard/AdminDMain";
 import AddProduct from "../dashboard/admin/addProduct/AddProduct";
 import ManageProduct from "../dashboard/admin/manageProduct/ManageProduct";
 import UpdateProduct from "../dashboard/admin/manageProduct/UpdateProduct";
-import ManageUsers from "../dashboard/admin/users/manageUsers";
+import ManageUsers from "../dashboard/admin/users/ManageUsers";
 import ManageOrders from "../dashboard/admin/manageOrders/ManageOrders";
 import Unauthorized from "../pages/auth/Unauthorized";
 
