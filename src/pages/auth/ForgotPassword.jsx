@@ -13,7 +13,7 @@ function ForgotPassword() {
 
     try {
       // 📤 Anfrage an Backend senden zum Zurücksetzen des Passworts
-      const response = await axios.post("http://localhost:5000/api/auth/forgot-password", {
+      const response = await axios.post(`${getBaseUrl()}/api/auth/forgot-password`, {
         email,
       });
 

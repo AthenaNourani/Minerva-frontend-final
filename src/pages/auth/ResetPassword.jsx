@@ -30,7 +30,7 @@ function ResetPassword() {
     try {
       // 📡 Anfrage an Backend senden
       const response = await axios.post(
-        `http://localhost:5000/api/auth/reset-password/${token}`,
+        `${getBaseUrl()}/api/auth/reset-password/${token}`,
         { newPassword }
       );
 

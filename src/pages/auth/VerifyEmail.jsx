@@ -9,7 +9,7 @@ const VerifyEmailManually = () => {
   const handleVerify = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get(`http://localhost:5000/api/auth/verify-email/${token}`);
+      const response = await axios.get(`${getBaseUrl()}/api/auth//verify-email/${token}`);
       setMessage(response.data.message || '✅ Ihre E-Mail wurde erfolgreich bestätigt.');
     } catch (error) {
       setMessage(error.response?.data?.message || '❌ Fehler bei der E-Mail-Bestätigung.');
